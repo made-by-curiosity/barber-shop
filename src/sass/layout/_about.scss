@@ -1,0 +1,28 @@
+.about_wrap {
+  display: flex;
+}
+
+.about_photos {
+  width: 570px;
+  height: auto;
+  margin-right: 30px;
+  display: none;
+  @media screen and (min-width: $tablet-min) {
+    display: block;
+  }
+}
+
+.about_info {
+  max-width: 470px;
+}
+
+.about_post-title {
+  margin-bottom: 20px;
+}
+
+.about_text {
+  font-size: 14px;
+  line-height: 1.86;
+
+  color: var(--main-text-color);
+}
