@@ -1,14 +1,60 @@
 <section class="about section">
   <div class="container">
     <div class="about_wrap">
-      <div class="about_photos"></div>
+      <div class="about_photo-set">
+        <picture class="about_photo-wrap">
+          <source
+            srcset="
+              ./images/about/about_1-270.jpg    1x,
+              ./images/about/about_1-270@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/about/about_1-330.jpg    1x,
+              ./images/about/about_1-330@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            src="./images/about/about_1-330.jpg"
+            alt="shaving"
+            class="about_photo"
+          />
+        </picture>
+        <picture class="about_photo-wrap">
+          <source
+            srcset="
+              ./images/about/about_2-270.jpg    1x,
+              ./images/about/about_2-270@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/about/about_2-330.jpg    1x,
+              ./images/about/about_2-330@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            src="./images/about/about_2-330.jpg"
+            alt="haircutting"
+            class="about_photo"
+          />
+        </picture>
+      </div>
       <div class="about_info">
-        <p class="section_pretitle">About</p>
-        <h2 class="section_title">Best Barbershop in your city</h2>
+        <p class="section_info">About</p>
+        <h2 class="about_title">
+          Best Barbershop in<br />
+          your city
+        </h2>
 
         <p class="about_post-title">
           If you want to add more confidence to your image, you should
-          definitely visit us.
+          <span class="about_hidden-text">definitely</span> visit us.
         </p>
         <p class="about_text">
           We are a team that never stops at what has been achieved and are
@@ -17,6 +63,8 @@
           same wave" with clients. Therefore, we are always ready to improve
           everyone who comes to us!
         </p>
+
+        <a class="main-button">online-booking</a>
       </div>
     </div>
   </div>

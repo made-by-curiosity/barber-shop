@@ -3,6 +3,16 @@
 
   padding-top: 84px;
   padding-bottom: 84px;
+
+  @media screen and (min-width: $tablet-min) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .section--header {
@@ -20,16 +30,7 @@
   padding-bottom: 44px;
 }
 
-.section_title {
-  margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-}
-
-.section_pretitle {
+.section_info {
   margin-bottom: 20px;
 
   display: flex;
@@ -37,7 +38,7 @@
 
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   text-transform: uppercase;
 
   &::before {
@@ -49,6 +50,10 @@
 
     display: inline-block;
 
-    background: #303030;
+    background: var(--main-color);
   }
+}
+
+.section_info--invert {
+  color: var(--hero-color);
 }

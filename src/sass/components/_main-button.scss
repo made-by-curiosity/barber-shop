@@ -1,0 +1,22 @@
+.main-button {
+  width: 160px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+
+  &:hover {
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+  }
+}
