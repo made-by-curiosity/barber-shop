@@ -21,8 +21,8 @@
 }
 
 .section--hero {
-  padding-top: 44px;
-  padding-bottom: 44px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .section--footer {
@@ -56,4 +56,14 @@
 
 .section__info--invert {
   color: var(--hero-color);
+  letter-spacing: 0.1em;
+
+  &::before {
+    content: '';
+    background: var(--hero-color);
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    letter-spacing: 0;
+  }
 }

@@ -1,0 +1,38 @@
+.site-soc-links {
+  display: flex;
+  align-items: center;
+
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  &:before {
+    content: '';
+    width: 60px;
+    height: 1px;
+
+    margin-right: 40px;
+
+    display: inline-block;
+
+    background: var(--main-color);
+  }
+}
+
+.site-soc-links__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.site-soc-links__link {
+  transition: color 300ms ease;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
