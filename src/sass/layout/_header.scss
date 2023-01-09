@@ -8,8 +8,56 @@
 }
 
 .site-header__logo {
+  margin-right: 60px;
+  @media screen and (min-width: $desktop-min) {
+    margin-right: 131px;
+  }
+}
+
+.site-header__icon {
   fill: var(--secondary-color);
   @media screen and (min-width: $tablet-min) {
     fill: var(--main-color);
+  }
+}
+
+.site-header__menu-button {
+  margin-left: auto;
+}
+
+.site-header__menu-icon {
+  fill: var(--secondary-color);
+  @media screen and (min-width: $tablet-min) {
+    display: none;
+  }
+}
+
+.site-header__menu {
+  display: none;
+  @media screen and (min-width: $tablet-min) {
+    width: 100%;
+    padding-right: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    align-items: center;
+  }
+}
+
+.site-header_wrap {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $desktop-min) {
+    flex-direction: row-reverse;
+  }
+}
+
+.site-header__tel {
+  @media screen and (min-width: $desktop-min) {
+    margin-right: 40px;
   }
 }

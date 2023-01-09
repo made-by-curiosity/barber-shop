@@ -18,6 +18,9 @@
 .section--header {
   padding-top: 40px;
   padding-bottom: 0;
+  @media screen and (min-width: $tablet-min) {
+    padding-top: 32px;
+  }
 }
 
 .section--hero {

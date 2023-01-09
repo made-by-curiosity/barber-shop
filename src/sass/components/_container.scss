@@ -22,6 +22,8 @@
 }
 
 .container--header {
+  display: flex;
+
   @media screen and (min-width: $tablet-min) {
     padding-left: 50;
   }
