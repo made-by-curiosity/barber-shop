@@ -21,6 +21,15 @@
   }
 }
 
+.container--header {
+  @media screen and (min-width: $tablet-min) {
+    padding-left: 50;
+  }
+  @media screen and (min-width: $desktop-min) {
+    padding-left: 15;
+  }
+}
+
 .container--hero {
   @media screen and (max-width: $tablet-max) {
     padding-left: 0;
