@@ -1,10 +1,43 @@
-.hero {
+.hero__links {
+  width: 120px;
+  padding-left: 37px;
+  padding-bottom: 40px;
+
+  display: none;
+  @media screen and (min-width: $tablet-min) {
+    display: inline-flex;
+    align-items: flex-end;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    padding-left: 42px;
+  }
+}
+
+.hero__slider-block {
   position: relative;
 
   width: 480px;
   height: 580px;
 
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: var(--hero-bg);
+
+  @media screen and (min-width: $tablet-min) {
+    width: 570px;
+    height: 680px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    width: 1070px;
+  }
+}
+
+.hero__slider {
+  width: 100%;
+  height: 100%;
 }
 
 .hero__wrapper {
@@ -12,8 +45,23 @@
   top: 208px;
   left: 31px;
 
-  width: 336px;
+  max-width: 336px;
   height: 163px;
+
+  @media screen and (min-width: $tablet-min) {
+    top: 272px;
+    left: 120px;
+
+    max-width: 360px;
+    height: 171px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    left: 100px;
+
+    max-width: 448px;
+    height: 200px;
+  }
 }
 
 .hero__title {
@@ -22,6 +70,11 @@
   font-size: 48px;
   line-height: 1.17;
   color: var(--secondary-color);
+
+  @media screen and (min-width: $desktop-min) {
+    font-size: 72px;
+    line-height: 1.18;
+  }
 }
 
 .hero__text {
@@ -29,4 +82,16 @@
   line-height: 1.62;
 
   color: var(--secondary-text-color);
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.hero__soc-links {
+  display: none;
+  @media screen and (min-width: $tablet-min) {
+    display: block;
+  }
 }

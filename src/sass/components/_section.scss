@@ -62,4 +62,8 @@
     content: '';
     background: var(--hero-color);
   }
+
+  @media screen and (min-width: $tablet-min) {
+    letter-spacing: 0;
+  }
 }
