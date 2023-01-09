@@ -19,8 +19,17 @@
 
   transition: color 300ms ease, background-color 300ms ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--secondary-color);
     background-color: var(--accent-color);
+  }
+}
+
+.main-button--booking {
+  color: var(--secondary-color);
+
+  @media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
+    margin-bottom: 20px;
   }
 }

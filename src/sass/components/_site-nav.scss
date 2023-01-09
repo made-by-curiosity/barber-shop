@@ -1,0 +1,22 @@
+.site-nav__list {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--secondary-color);
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.site-nav__link {
+  transition: color 300ms ease;
+
+  .site-nav__item:hover & {
+    color: var(--accent-color);
+  }
+}

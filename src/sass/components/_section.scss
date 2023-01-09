@@ -1,5 +1,5 @@
 .section {
-  outline: 1px solid tomato;
+  // outline: 1px solid tomato;
 
   padding-top: 84px;
   padding-bottom: 84px;
@@ -16,8 +16,11 @@
 }
 
 .section--header {
-  padding-top: 44px;
-  padding-bottom: 44px;
+  padding-top: 40px;
+  padding-bottom: 0;
+  @media screen and (min-width: $tablet-min) {
+    padding-top: 32px;
+  }
 }
 
 .section--hero {
