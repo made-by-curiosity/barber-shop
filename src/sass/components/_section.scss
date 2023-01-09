@@ -56,4 +56,10 @@
 
 .section__info--invert {
   color: var(--hero-color);
+  letter-spacing: 0.1em;
+
+  &::before {
+    content: '';
+    background: var(--hero-color);
+  }
 }

@@ -1,0 +1,32 @@
+.hero {
+  position: relative;
+
+  width: 480px;
+  height: 580px;
+
+  background-color: var(--hero-bg);
+}
+
+.hero__wrapper {
+  position: absolute;
+  top: 208px;
+  left: 31px;
+
+  width: 336px;
+  height: 163px;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+
+  font-size: 48px;
+  line-height: 1.17;
+  color: var(--secondary-color);
+}
+
+.hero__text {
+  font-size: 16px;
+  line-height: 1.62;
+
+  color: var(--secondary-text-color);
+}
