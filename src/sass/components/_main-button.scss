@@ -12,8 +12,12 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
 
+  cursor: pointer;
+
   border: 1px solid var(--accent-color);
   border-radius: 25px;
+
+  transition: color 300ms ease, background-color 300ms ease;
 
   &:hover {
     color: var(--secondary-color);

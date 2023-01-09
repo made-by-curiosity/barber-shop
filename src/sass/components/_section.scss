@@ -30,7 +30,7 @@
   padding-bottom: 44px;
 }
 
-.section_info {
+.section__info {
   margin-bottom: 20px;
 
   display: flex;
@@ -54,6 +54,6 @@
   }
 }
 
-.section_info--invert {
+.section__info--invert {
   color: var(--hero-color);
 }
