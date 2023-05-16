@@ -1,4 +1,15 @@
 .features {
+  &__container.container {
+    @media screen and (min-width: $desktop-min) {
+      padding-left: 100px;
+      padding-right: 70px;
+
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
   &__title {
     margin-bottom: 20px;
 
