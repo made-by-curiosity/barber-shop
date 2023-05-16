@@ -2,4 +2,79 @@
   &__section {
     background-color: var(--secondary-bg-color);
   }
+
+  &__title {
+    margin-bottom: 44px;
+
+    font-size: 42px;
+    line-height: 1.17;
+
+    color: var(--main-color);
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__card {
+    text-align: center;
+  }
+
+  &__photo-wrap {
+    max-width: 418px;
+    max-height: 346px;
+    margin-bottom: 30px;
+
+    background-color: var(--price-line-color);
+
+    @media screen and (min-width: $mobile-min) {
+      width: 418px;
+      height: 346px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    line-height: 1.39;
+    color: var(--main-color);
+  }
+
+  &__position {
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.36;
+    color: var(--accent-color);
+  }
+
+  &__soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__link {
+    width: 44px;
+    height: 44px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--secondary-color);
+
+    border-radius: 50%;
+
+    fill: var(--main-color);
+
+    transition: fill 200ms ease-out;
+
+    &:hover {
+      fill: var(--accent-color);
+    }
+  }
 }
