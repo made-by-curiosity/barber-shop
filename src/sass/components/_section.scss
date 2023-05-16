@@ -31,11 +31,22 @@
 .section--footer {
   padding-top: 44px;
   padding-bottom: 44px;
+
+  @media screen and (min-width: $tablet-min) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }
 
 .section--gallery {
   @media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
     padding-bottom: 106px;
+  }
+}
+
+.section--contacts {
+  @media screen and (max-width: $desktop-max) {
+    padding: 0;
   }
 }
 

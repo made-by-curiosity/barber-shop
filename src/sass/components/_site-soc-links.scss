@@ -2,12 +2,10 @@
   display: flex;
   align-items: center;
 
-  transform: rotate(-90deg) translateY(100%);
-  transform-origin: bottom left;
-
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+  letter-spacing: 0.2em;
 
   &:before {
     content: '';
@@ -35,4 +33,9 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+
+.site-soc-links--hero {
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
 }

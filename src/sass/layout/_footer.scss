@@ -1,0 +1,32 @@
+.footer {
+  &__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    @media screen and (min-width: $tablet-min) {
+      flex-direction: row;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+
+    color: var(--secondary-text-color);
+  }
+
+  &__copyright-icon {
+    font-size: 13px;
+    margin-right: 6px;
+  }
+
+  &__links {
+    margin-left: auto;
+    @media screen and (max-width: $tablet-max) {
+      margin-bottom: 20px;
+    }
+  }
+}
