@@ -10,7 +10,12 @@
     margin-bottom: 44px;
 
     font-size: 40px;
+    line-height: 1.18;
     color: var(--secondary-color);
+
+    @media screen and (min-width: $tablet-min) {
+      font-size: 44px;
+    }
   }
 
   &__wrapper {
@@ -38,24 +43,31 @@
   }
 
   &__service-name {
+    display: inline-block;
+    margin-right: auto;
+    text-align: left;
+
+    min-width: 50px;
+  }
+
+  &__price-tag {
     display: flex;
     align-items: baseline;
     flex-grow: 1;
+    min-width: 100px;
+    text-align: right;
 
-    &::after {
+    &::before {
       content: '';
       margin-left: 4px;
       margin-right: 4px;
 
       display: block;
       flex-grow: 1;
+      min-width: 10px;
 
       border-bottom: 1px solid var(--price-line-color);
     }
-  }
-
-  &__price-tag {
-    margin-left: auto;
   }
 
   &__btn {
