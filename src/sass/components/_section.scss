@@ -33,6 +33,12 @@
   padding-bottom: 44px;
 }
 
+.section--gallery {
+  @media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
+    padding-bottom: 106px;
+  }
+}
+
 .section__info {
   margin-bottom: 20px;
 
@@ -76,5 +82,12 @@
 
   @media screen and (min-width: $tablet-min) {
     letter-spacing: 0;
+  }
+}
+
+.section__info--gallery {
+  margin-bottom: 71px;
+  @media screen and (min-width: $tablet-min) {
+    margin-bottom: 44px;
   }
 }
