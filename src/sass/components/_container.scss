@@ -40,3 +40,10 @@
 
   display: flex;
 }
+
+.container--barbers {
+  @media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
+    padding-left: 159px;
+    padding-right: 159px;
+  }
+}
