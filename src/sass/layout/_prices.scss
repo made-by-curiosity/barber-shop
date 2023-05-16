@@ -1,0 +1,65 @@
+.prices {
+  &__section {
+    background: url(../images/prices/prices_bg-480.png);
+    background-color: var(--prices-bg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__title {
+    margin-bottom: 44px;
+
+    font-size: 40px;
+    color: var(--secondary-color);
+  }
+
+  &__wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 20px;
+    margin-bottom: 44px;
+
+    font-size: 14px;
+    color: var(--secondary-text-color);
+
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    &:not(:last-child) {
+      // тут убрать маржины для десктопа
+    }
+  }
+
+  &__text {
+    display: flex;
+  }
+
+  &__service-name {
+    display: flex;
+    align-items: baseline;
+    flex-grow: 1;
+
+    &::after {
+      content: '';
+      margin-left: 4px;
+      margin-right: 4px;
+
+      display: block;
+      flex-grow: 1;
+
+      border-bottom: 1px solid var(--price-line-color);
+    }
+  }
+
+  &__price-tag {
+    margin-left: auto;
+  }
+
+  &__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -57,6 +57,13 @@
   }
 }
 
+.section__info--prices {
+  color: var(--hero-color);
+  &::before {
+    background-color: var(--hero-color);
+  }
+}
+
 .section__info--invert {
   color: var(--hero-color);
   letter-spacing: 0.1em;
