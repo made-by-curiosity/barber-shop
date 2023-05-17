@@ -2,7 +2,13 @@
   background-color: var(--hero-bg);
 
   @media screen and (min-width: $desktop-min) {
-    display: flex;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    background-image: url(../images/contacts/contacts-bg785.png);
+    background-repeat: no-repeat;
+    background-size: calc(50% - 15px) 634px;
+    background-position: center right;
   }
 
   &__section {
@@ -56,24 +62,118 @@
     display: flex;
     flex-direction: column;
     gap: 44px;
+
+    @media screen and (min-width: $tablet-min) {
+      flex-direction: row;
+      gap: 30px;
+    }
   }
 
-  &__required-inputs {
-    // width: 100%;
-  }
-
-  &__message {
-    display: flex;
-    flex-direction: column;
+  &__input-container {
     width: 100%;
+    position: relative;
+    line-height: 0;
   }
 
-  &__message-input {
-    // width: 100%;
+  &__input {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 24px;
+    padding-bottom: 8px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+
+    cursor: pointer;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--footer-color);
+    color: var(--secondary-color);
+
+    transition: border 200ms ease-out;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid var(--secondary-color);
+    }
+
+    &:hover + .contacts__input-name {
+      color: var(--secondary-color);
+    }
+
+    &:not(:placeholder-shown) + .contacts__input-name,
+    &:focus + .contacts__input-name {
+      color: var(--secondary-color);
+      transform: translateY(-20px);
+    }
+
+    &:not(:placeholder-shown) {
+      border-bottom: 1px solid var(--secondary-color);
+    }
+  }
+
+  &__input-message {
+    height: 76px;
+
+    resize: none;
+  }
+
+  &__input-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--footer-color);
+
+    transition: transform 200ms ease-out, color 200ms ease-out;
   }
 
   &__info {
-    outline: 1px solid tomato;
-    // background-image: url();
+    @media screen and (max-width: $tablet-max) {
+      background-image: url(../images/contacts/contacts-bg480.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media screen and(min-width: $tablet-min) and (max-width: $desktop-max) {
+      background-image: url(../images/contacts/contacts-bg768.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media screen and (min-width: $desktop-min) {
+      min-height: 634px;
+    }
+  }
+
+  &__container {
+    @media screen and (min-width: $desktop-min) {
+    }
+  }
+}
+
+.address {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }

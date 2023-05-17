@@ -6,23 +6,34 @@
           <h2 class="contacts__title contacts__booking">Online-booking</h2>
           <form class="contacts__form">
             <div class="contacts__inputs-wrapper">
-              <input
-                type="text"
-                required
-                placeholder="NAME*"
-                class="contacts__required-inputs"
-              />
-              <input
-                type="tel"
-                required
-                placeholder="PHONE*"
-                class="contacts__required-inputs"
-              />
+              <div class="contacts__input-container">
+                <input
+                  type="text"
+                  required
+                  class="contacts__input"
+                  placeholder=" "
+                />
+                <label class="contacts__input-name">name*</label>
+              </div>
+              <div class="contacts__input-container">
+                <input
+                  type="tel"
+                  required
+                  class="contacts__input"
+                  placeholder=" "
+                />
+                <label class="contacts__input-name">phone*</label>
+              </div>
             </div>
-            <label class="contacts__message">
-              MESSAGE
-              <textarea type="text" class="contacts__message-input" />
-            </label>
+            <div class="contacts__input-container">
+              <textarea
+                type="text"
+                class="contacts__input-message contacts__input"
+                placeholder=" "
+              ></textarea>
+              <label class="contacts__input-name">message</label>
+            </div>
+
             <button type="submit" class="main-button main-button--booking">
               Send
             </button>
@@ -34,6 +45,29 @@
       <div class="container container--info contacts__container">
         <div class="contacts__section">
           <h2 class="contacts__title contacts__contact-info">Contacts</h2>
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  href="https://goo.gl/maps/ShA2sXcPBCz5dtDu5?coh=178572&entry=tt"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  class="address__link"
+                  >st. Vasilkovaya, 7A Kiev, 08132</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="tel:+380441111111" class="address__contact"
+                  >+38 044 111 11 11</a
+                >
+              </li>
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__contact"
+                  >barbershop@email.com</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
       </div>
     </div>

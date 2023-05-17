@@ -45,9 +45,10 @@
 }
 
 .section--contacts {
-  @media screen and (max-width: $desktop-max) {
-    padding: 0;
-  }
+  // @media screen and (max-width: $desktop-max) {
+  //   padding: 0;
+  // }
+  padding: 0;
 }
 
 .section__info {

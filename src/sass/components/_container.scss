@@ -65,11 +65,28 @@
   // }
 
   @media screen and (min-width: $desktop-min) {
-    min-width: $desktop-min;
+    width: $desktop-min;
     margin-left: auto;
     margin-right: auto;
 
+    display: flex;
+
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+.container--form-wrapper {
+  @media screen and (min-width: $desktop-min) {
+    min-width: 600px;
+    padding-left: 0;
+    padding-right: 30px;
+  }
+}
+
+.container--info {
+  @media screen and (min-width: $desktop-min) {
+    min-width: 270px;
+    padding-left: 100px;
   }
 }
