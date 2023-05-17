@@ -1,13 +1,13 @@
 .prices {
   &__section {
-    background: url(../images/prices/prices_bg-480.png);
+    background: url(../images/prices/prices_bg480.png);
     background-color: var(--prices-bg-color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     @media screen and (min-width: $tablet-min) {
-      background: url(../images/prices/prices_bg-768.png);
+      background: url(../images/prices/prices_bg768.png);
       background-color: var(--prices-bg-color);
       background-repeat: no-repeat;
       background-size: cover;
@@ -15,7 +15,7 @@
     }
 
     @media screen and (min-width: $desktop-min) {
-      background: url(../images/prices/prices_bg-1600.png);
+      background: url(../images/prices/prices_bg1600.png);
       background-color: var(--prices-bg-color);
       background-repeat: no-repeat;
       background-size: cover;
