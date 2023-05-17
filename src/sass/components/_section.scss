@@ -103,3 +103,10 @@
     margin-bottom: 44px;
   }
 }
+
+.section__info--schedule {
+  color: var(--secondary-color);
+  &::before {
+    background-color: var(--footer-color);
+  }
+}

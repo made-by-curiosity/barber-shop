@@ -49,21 +49,6 @@
 }
 
 .container--contacts {
-  // max-width: $mobile-min;
-
-  // margin-left: auto;
-  // margin-right: auto;
-
-  // padding-left: 31px;
-  // padding-right: 31px;
-
-  // @media screen and (min-width: $tablet-min) {
-  //   min-width: $tablet-min;
-
-  //   padding-left: 39px;
-  //   padding-right: 39px;
-  // }
-
   @media screen and (min-width: $desktop-min) {
     width: $desktop-min;
     margin-left: auto;

@@ -163,17 +163,49 @@
     @media screen and (min-width: $desktop-min) {
     }
   }
+
+  &__schedule-info {
+    font-size: 18px;
+    line-height: 1.67;
+
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+  }
+
+  &__address-wrap {
+    @media screen and (min-width: $tablet-min) and (max-width: $desktop-max) {
+      display: flex;
+      gap: 30px;
+    }
+  }
 }
 
 .address {
+  margin-bottom: 44px;
+
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 
+  @media screen and (min-width: $tablet-min) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-bottom: 70px;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  &__br {
+    @media screen and (max-width: $tablet-max) {
+      display: none;
+    }
   }
 }
