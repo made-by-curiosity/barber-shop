@@ -188,6 +188,8 @@
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  fill: transparent;
+  stroke: currentColor;
 
   @media screen and (min-width: $tablet-min) {
     width: 330px;
@@ -195,6 +197,11 @@
 
   @media screen and (min-width: $desktop-min) {
     margin-bottom: 70px;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
   }
 
   &__list {
@@ -206,6 +213,20 @@
   &__br {
     @media screen and (max-width: $tablet-max) {
       display: none;
+    }
+  }
+
+  &__icon {
+    margin-right: 16px;
+  }
+
+  &__location {
+    display: inline-block;
+  }
+
+  &__icon-map {
+    @media screen and (min-width: $tablet-min) {
+      transform: translateY(-12px);
     }
   }
 }
