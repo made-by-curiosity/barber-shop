@@ -96,6 +96,10 @@
 
     transition: border 200ms ease-out;
 
+    &::placeholder {
+      color: transparent;
+    }
+
     &:hover,
     &:focus {
       outline: none;
