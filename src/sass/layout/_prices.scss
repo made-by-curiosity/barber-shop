@@ -6,12 +6,32 @@
     background-size: cover;
     background-position: center;
 
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(../images/prices/prices_bg480_2x.png);
+      background-color: var(--prices-bg-color);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
     @media screen and (min-width: $tablet-min) {
       background: url(../images/prices/prices_bg768.png);
       background-color: var(--prices-bg-color);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background: url(../images/prices/prices_bg768_2x.png);
+        background-color: var(--prices-bg-color);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
     }
 
     @media screen and (min-width: $desktop-min) {
@@ -20,6 +40,16 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background: url(../images/prices/prices_bg1600_2x.png);
+        background-color: var(--prices-bg-color);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
     }
   }
 
