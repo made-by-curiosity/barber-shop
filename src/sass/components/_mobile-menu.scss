@@ -1,0 +1,29 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--overlay-color);
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  bottom: 0;
+  width: 70vw;
+  height: 100vh;
+
+  background-color: var(--secondary-color);
+  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08),
+    -1px 0px 3px rgba(0, 0, 0, 0.16);
+
+  @media screen and (min-width: $tablet-min) {
+    transform: translateX(-100vw);
+  }
+}
