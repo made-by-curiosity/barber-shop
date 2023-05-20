@@ -47,6 +47,7 @@
 
   max-width: 336px;
   height: 163px;
+  margin-right: 31px;
 
   @media screen and (min-width: $tablet-min) {
     top: 272px;
@@ -102,10 +103,14 @@
   left: 0;
   bottom: 0;
 
-  width: 100%;
+  width: 100vw;
   height: 100%;
 
   background: var(--overlay-color);
 
   z-index: 20;
+
+  @media screen and (min-width: 400px) {
+    width: 100%;
+  }
 }
