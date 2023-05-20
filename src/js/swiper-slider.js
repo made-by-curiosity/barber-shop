@@ -4,22 +4,19 @@ import 'swiper/swiper-bundle.min.css';
 
 // init Swiper:
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  // direction: 'vertical',
-  // loop: true,
+  effect: 'fade',
+  speed: 1500,
   autoplay: {
-    delay: 2500,
+    delay: 5000,
     disableOnInteraction: false,
   },
-  // If we need pagination
+
   pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+    el: '.hero-pagination',
   },
 
-  // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.hero-slider-forward',
+    prevEl: '.hero-slider-back',
   },
 });
