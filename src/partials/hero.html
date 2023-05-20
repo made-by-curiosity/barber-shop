@@ -21,7 +21,124 @@
       </ul>
     </div>
     <div class="hero__slider-block">
-      <div class="hero__slider"></div>
+      <div class="hero__slider">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/hero/hero1-1070-min.jpg    1070w,
+                    ./images/hero/hero1-1070@2x-min.jpg 2140w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="1070px"
+                />
+                <source
+                  srcset="
+                    ./images/hero/hero1-570-min.jpg     570w,
+                    ./images/hero/hero1-570@2x-min.jpg 1140w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="570px"
+                />
+                <source
+                  srcset="
+                    ./images/hero/hero1-480-min.jpg    480w,
+                    ./images/hero/hero1-480@2x-min.jpg 960w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(max-width: 479px) 320px ,480px"
+                />
+                <img
+                  class="hero__img"
+                  src="./images/hero/hero1-480-min.jpg"
+                  alt="hair styling"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/hero/hero2-1070-min.jpg    1070w,
+                    ./images/hero/hero2-1070@2x-min.jpg 2140w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="1070px"
+                />
+                <source
+                  srcset="
+                    ./images/hero/hero2-570-min.jpg     570w,
+                    ./images/hero/hero2-570@2x-min.jpg 1140w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="570px"
+                />
+                <source
+                  srcset="
+                    ./images/hero/hero2-480-min.jpg    480w,
+                    ./images/hero/hero2-480@2x-min.jpg 960w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(max-width: 479px) 320px ,480px"
+                />
+                <img
+                  class="hero__img"
+                  src="./images/hero/hero2-480-min.jpg"
+                  alt="hair styling"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/hero/hero3-1070-min.jpg    1070w,
+                    ./images/hero/hero3-1070@2x-min.jpg 2140w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="1070px"
+                />
+                <source
+                  srcset="
+                    ./images/hero/hero3-570-min.jpg     570w,
+                    ./images/hero/hero3-570@2x-min.jpg 1140w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="570px"
+                />
+                <source
+                  srcset="
+                    ./images/hero/hero3-480-min.jpg    480w,
+                    ./images/hero/hero3-480@2x-min.jpg 960w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(max-width: 479px) 320px ,480px"
+                />
+                <img
+                  class="hero__img"
+                  src="./images/hero/hero3-480-min.jpg"
+                  alt="hair styling"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
       <div class="hero__overlay">
         <div class="hero__wrapper">
           <p class="section__info section__info--invert">
