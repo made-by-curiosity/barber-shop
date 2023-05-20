@@ -40,6 +40,10 @@
   transform: translateX(0);
   transition: transform 300ms ease-out;
 
+  @media screen and (max-width: 400px) {
+    width: 100vw;
+  }
+
   &.is-closed {
     transform: translateX(100vw);
   }

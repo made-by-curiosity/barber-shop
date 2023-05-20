@@ -25,8 +25,23 @@
 
   &__links {
     margin-left: auto;
+
+    @media screen and (max-width: $tablet-max) {
+      gap: 10px;
+
+      &.site-soc-links::before {
+        margin-right: 10px;
+      }
+    }
+
     @media screen and (max-width: $tablet-max) {
       margin-bottom: 20px;
+    }
+  }
+
+  &__item.site-soc-links__item:not(:last-child) {
+    @media screen and (max-width: $tablet-max) {
+      margin: 0;
     }
   }
 }

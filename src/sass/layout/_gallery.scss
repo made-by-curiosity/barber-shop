@@ -11,10 +11,12 @@
   }
 
   &__item {
-    width: 418px;
-    height: 360px;
-
     background-color: var(--main-text-color);
+
+    @media screen and (min-width: $mobile-min) {
+      width: 418px;
+      height: 360px;
+    }
 
     @media screen and (min-width: $tablet-min) {
       width: 330px;
