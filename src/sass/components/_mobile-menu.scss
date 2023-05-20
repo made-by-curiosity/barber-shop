@@ -7,8 +7,11 @@
   width: 100vw;
   height: 100vh;
 
+  opacity: 1;
+
   background-color: var(--overlay-color);
-  // display: none;
+
+  transition: opacity 300ms ease-out;
 
   z-index: 999;
 }

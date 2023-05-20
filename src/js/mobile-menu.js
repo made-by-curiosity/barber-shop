@@ -22,8 +22,10 @@ function toggleMobileMenu() {
     !refs.mobileMenuContainer.classList.contains('is-closed')
   ) {
     refs.backdrop.addEventListener('click', onBackdropClick);
+    document.body.style.overflow = 'hidden';
   } else {
     refs.backdrop.removeEventListener('click', onBackdropClick);
+    document.body.style.overflow = 'auto';
   }
 }
 
