@@ -33,6 +33,7 @@ function onWindowSizeChange(e) {
   if (!e.matches) return;
   refs.backdrop.classList.add('is-hidden');
   refs.mobileMenuContainer.classList.add('is-closed');
+  document.body.style.overflow = 'auto';
 }
 
 function onBackdropClick(e) {
