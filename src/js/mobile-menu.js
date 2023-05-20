@@ -1,6 +1,7 @@
 const refs = {
   mobileMenuOpenBtn: document.querySelector('.js-open-menu'),
   mobileMenuCloseBtn: document.querySelector('.js-close-menu'),
+  mobileMenuCloseAnchor: document.querySelector('.js-anchor-close-menu'),
   backdrop: document.querySelector('.js-backdrop'),
   mobileMenuContainer: document.querySelector('.js-mobile-menu'),
 };
@@ -22,9 +23,13 @@ function toggleMobileMenu() {
     !refs.mobileMenuContainer.classList.contains('is-closed')
   ) {
     refs.backdrop.addEventListener('click', onBackdropClick);
+    refs.mobileMenuContainer.addEventListener('click', onMobileAnchorClick);
+
     document.body.style.overflow = 'hidden';
   } else {
     refs.backdrop.removeEventListener('click', onBackdropClick);
+    refs.mobileMenuContainer.removeEventListener('click', onMobileAnchorClick);
+
     document.body.style.overflow = 'auto';
   }
 }
@@ -39,6 +44,13 @@ function onWindowSizeChange(e) {
 function onBackdropClick(e) {
   const isBackdrop = e.target.classList.contains('backdrop');
   if (isBackdrop) {
+    toggleMobileMenu();
+  }
+}
+
+function onMobileAnchorClick(e) {
+  const IsMobileAnchor = e.target.classList.contains('js-anchor');
+  if (IsMobileAnchor) {
     toggleMobileMenu();
   }
 }

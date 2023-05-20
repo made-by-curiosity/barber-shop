@@ -23,10 +23,17 @@
 
 .site-header__menu-button {
   margin-left: auto;
+
+  fill: var(--secondary-color);
+  transition: fill 300ms ease;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .site-header__menu-icon {
-  fill: var(--secondary-color);
   @media screen and (min-width: $tablet-min) {
     display: none;
   }
